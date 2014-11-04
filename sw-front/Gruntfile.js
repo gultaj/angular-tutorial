@@ -83,7 +83,7 @@ module.exports = function (grunt) {
       livereload: {
         options: {
           open: true,
-          middleware: function (connect, options) {
+          middleware: function (connect) {
             return [
               connect.static('.tmp'),
               connect().use(
@@ -108,7 +108,7 @@ module.exports = function (grunt) {
             '.tmp',
             'test',
             '<%= yeoman.app %>'
-          ]
+          ],
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
