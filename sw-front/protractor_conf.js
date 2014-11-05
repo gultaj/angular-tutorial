@@ -1,9 +1,9 @@
 // An example configuration file.
 exports.config = {
   // Do not start a Selenium Standalone sever - only run this using chrome.
-  // chromeOnly: true,
-  // chromeDriver: './node_modules/protractor/selenium/chromedriver',
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  chromeOnly: true,
+  chromeDriver: './node_modules/protractor/selenium/chromedriver',
+  // seleniumAddress: 'http://localhost:4444/wd/hub',
 
   baseUrl: 'http://localhost:9000',
 
