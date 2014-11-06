@@ -18,7 +18,6 @@ describe('Controller: EdgesController', function () {
     it('it concatenates name and value of the requirements', function() {
       reqs = [{name: 'Agility', value: 'd6'}];
       expect(scope.displayRequirements(reqs)).toEqual('Agility d6');
-
     });
   });
 });
